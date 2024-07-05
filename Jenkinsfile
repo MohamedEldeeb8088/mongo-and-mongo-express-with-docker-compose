@@ -13,11 +13,6 @@ pipeline {
                     echo "User input git : $username"
             }
         }
-        stage('git') {
-            steps {
-               
-                    echo "User input git : $git"
-            }
-        }
+        
     }
 }
