@@ -17,5 +17,7 @@ pipeline {
             steps {
                
                     echo "User input git : $git"
+            }
+        }
     }
 }
