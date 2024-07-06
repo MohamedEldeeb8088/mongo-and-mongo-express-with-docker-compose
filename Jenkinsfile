@@ -14,7 +14,5 @@ pipeline {
                 sh 'docker compose ps'
             }
         }
-    
-    
     }
 }
