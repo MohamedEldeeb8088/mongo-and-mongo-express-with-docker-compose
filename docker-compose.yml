@@ -21,7 +21,7 @@ services:
       ME_CONFIG_BASICAUTH: false
     ports:
       - 8089:8081
-    volumes:
+    volumes:  
       - ./data:/data/db
     depends_on:
       - mongo-db-services1

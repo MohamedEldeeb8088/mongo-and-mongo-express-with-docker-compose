@@ -15,4 +15,11 @@ pipeline {
             }
         }
     }
+    post {
+        failure {
+            sh 'docker compose down --remove-orphans -v'
+            sh 'docker compose ps'
+            sh 'docker compose up -d'
+    }
+  }
 }
