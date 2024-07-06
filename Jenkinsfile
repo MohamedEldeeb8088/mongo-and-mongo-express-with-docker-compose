@@ -22,11 +22,11 @@ pipeline {
                 success {
                     echo"success2"
                 }
+
                 
                 
             }
         }
     }
     
-
 }
