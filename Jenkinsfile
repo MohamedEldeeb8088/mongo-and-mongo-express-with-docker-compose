@@ -7,7 +7,12 @@ pipeline {
                 echo "User input git : $username"
             }
         }
-
+        stage('check') {
+            steps {
+                sh 'docker ps'
+                sh 'docker compose ps'
+            }
+        }
          stage('Start container') {
             steps {
                 sh 'docker compose up -d'
@@ -24,7 +29,7 @@ pipeline {
                 }
 
                 
-                
+
             }
         }
     }
