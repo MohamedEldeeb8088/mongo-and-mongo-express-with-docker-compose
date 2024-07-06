@@ -20,8 +20,9 @@ pipeline {
                 sh 'docker compose up -d' 
                 }
                 success {
-                    echo"success1"
+                    echo"success2"
                 }
+                
                 
             }
         }
